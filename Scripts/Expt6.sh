@@ -9,19 +9,19 @@ case $CHOICE in
 		echo -e "Enter two numbers: "
 		read A
 		read B
-		echo -e "Result: `echo $A + $B| bc`"
+		echo -e "Result: $[$A+$B]"
 	;;
 	2 )
 		echo -e "Enter two numbers: "
 		read A
 		read B
-		echo -e "Result: `echo $A - $B| bc`"
+		echo -e "Result: $[$A-$B]"
 	;;
 	3 )
 		echo -e "Enter two numbers: "
 		read A
 		read B
-		echo -e "Result: `echo $A \* $B| bc`"
+		echo -e "Result: $[$A*$B]"
 	;;
 	4 )
 		echo -e "Enter two numbers: "
@@ -31,7 +31,7 @@ case $CHOICE in
 			echo -e "Division By Zero"
 			exit
 		fi
-		echo -e "Result: `echo $A / $B| bc`"
+		echo -e "Result: $[$A/$B]"
 	;;
 	* )
 		echo -e "Invlid Option. Try Again."
