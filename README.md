@@ -1,1 +1,1 @@
-Stuff for Foss Lab
+KTU CSE S4 FOSS Lab Repo
