@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash }
+
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Current User                : }\PYG{n+nv}{\PYGZdl{}USER}\PYG{l+s+s2}{ (Login Name: }\PYG{n+nv}{\PYGZdl{}LOGNAME}\PYG{l+s+s2}{)\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Current Shell               : }\PYG{n+nv}{\PYGZdl{}SHELL}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Home Directory              : }\PYG{n+nv}{\PYGZdl{}HOME}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}OS Type                     : }\PYG{n+nv}{\PYGZdl{}OSTYPE}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Path                        : }\PYG{n+nv}{\PYGZdl{}PATH}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Current Working Directory   : }\PYG{n+nv}{\PYGZdl{}PWD}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Number of Users Logged in   : `who | wc \PYGZhy{}l`\PYGZdq{}}
+\end{Verbatim}

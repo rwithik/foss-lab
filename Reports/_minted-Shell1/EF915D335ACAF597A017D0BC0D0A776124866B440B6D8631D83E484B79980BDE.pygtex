@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+\PYG{k}{if} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}\PYGZsh{}} \PYGZhy{}ne \PYG{l+m}{2} \PYG{o}{]]}\PYG{p}{;} \PYG{k}{then}
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Wrong usage!\PYGZdq{}}
+	\PYG{n+nb}{exit}
+\PYG{k}{fi}
+
+\PYG{k}{if} \PYG{o}{[[} \PYGZhy{}f \PYG{n+nv}{\PYGZdl{}1} \PYG{o}{]]}\PYG{p}{;} \PYG{k}{then}
+	\PYG{k}{for} name in \PYG{l+s+sb}{`}cat \PYG{n+nv}{\PYGZdl{}1}\PYG{l+s+sb}{`}\PYG{p}{;} \PYG{k}{do}
+		\PYG{k}{if} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}name} \PYG{o}{==} \PYG{n+nv}{\PYGZdl{}2} \PYG{o}{]]}\PYG{p}{;} \PYG{k}{then}
+			\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Name already exists in list!\PYGZdq{}}
+			\PYG{n+nb}{exit}
+		\PYG{k}{fi}
+	\PYG{k}{done}
+	\PYG{n+nb}{echo} \PYG{n+nv}{\PYGZdl{}2} \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}1}
+	\PYG{n+nb}{exit}
+\PYG{k}{fi}
+
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}File }\PYG{n+nv}{\PYGZdl{}1}\PYG{l+s+s2}{ not found!\PYGZdq{}}
+\end{Verbatim}

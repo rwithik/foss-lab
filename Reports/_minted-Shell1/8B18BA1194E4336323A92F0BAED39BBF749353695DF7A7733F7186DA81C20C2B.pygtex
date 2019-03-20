@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Enter the operator:\PYGZbs{}n\PYGZbs{}}
+\PYG{l+s+s2}{		+ for addition\PYGZbs{}n\PYGZbs{}}
+\PYG{l+s+s2}{		\PYGZhy{} for subtraction\PYGZbs{}n\PYGZbs{}}
+\PYG{l+s+s2}{		* for multiplication\PYGZbs{}n\PYGZbs{}}
+\PYG{l+s+s2}{		/ for division\PYGZbs{}n\PYGZbs{}}
+\PYG{l+s+s2}{		\PYGZpc{} for modulus\PYGZdq{}}
+
+\PYG{n+nb}{read} CHOICE
+\PYG{k}{if} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}CHOICE} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}+\PYGZsq{}} \PYG{o}{]]} \PYG{o}{||} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}CHOICE} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZhy{}\PYGZsq{}} \PYG{o}{]]}\PYG{l+s+se}{\PYGZbs{}}
+		\PYG{o}{||} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}CHOICE} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}} \PYG{o}{]]} \PYG{o}{||} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}CHOICE} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}/\PYGZsq{}} \PYG{o}{]]}\PYG{l+s+se}{\PYGZbs{}}
+		\PYG{o}{||} \PYG{o}{[[} \PYG{n+nv}{\PYGZdl{}CHOICE} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZpc{}\PYGZsq{}} \PYG{o}{]]}
+\PYG{k}{then}
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Enter two numbers:\PYGZdq{}}
+	\PYG{n+nb}{read} A
+	\PYG{n+nb}{read} B
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Result: }\PYGZdl{}\PYG{l+s+s2}{[}\PYG{l+s+si}{\PYGZdl{}\PYGZob{}}\PYG{n+nv}{A}\PYG{l+s+si}{\PYGZcb{}\PYGZdl{}\PYGZob{}}\PYG{n+nv}{CHOICE}\PYG{l+s+si}{\PYGZcb{}\PYGZdl{}\PYGZob{}}\PYG{n+nv}{B}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{]\PYGZdq{}}
+\PYG{k}{else}
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}Invalid Choice\PYGZdq{}}
+\PYG{k}{fi}
+\end{Verbatim}
