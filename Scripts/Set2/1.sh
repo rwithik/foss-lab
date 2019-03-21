@@ -3,6 +3,7 @@
 if [[ -f $1 ]]
 then
   printf "File does not exist"
+  exit
 fi
 
 printf "%-15s" "Permission" "Size" "Filename" "Last modified"
