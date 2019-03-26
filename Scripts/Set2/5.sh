@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ ! -f $1 ]]
+then
+	printf "File does not exist\n"
+	exit
+fi
 
 echo "Vowels : `cat $1 | tr '[a-z]' '[A-Z]' | grep -o "A\|E\|I\|O\|U" | wc -l`"
 echo "Characters : $(cat $1 | wc -c)"

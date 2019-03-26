@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ ! -f $1 ]]
+then
+	printf "File does not exist"
+	exit
+fi
+
 n=`wc -l $1 | cut -d " " -f 1`
 i=1
 

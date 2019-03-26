@@ -26,8 +26,14 @@
 \item Your current working directory
 \item Number of users currently logged in
 \end{enumerate}
+\textbf{Algorithm:}
+\begin{enumerate}
+	\item Start
+	\item Print required configurations using system variables
+	\item Stop
+\end{enumerate}
 \textbf{Script:}\newline
-\inputminted{bash}{../Scripts/Expt4.sh}
+\inputminted{bash}{../Scripts/Set1/Expt4.sh}
 \textbf{Output:}\newline 
 \newline
 \includegraphics[width=\linewidth]{../Images/Shell1/1.png}
@@ -41,10 +47,21 @@
 \item Hard disk information like size of hard-disk, cache memory, model etc
 \item File system (Mounted)
 \end{itemize}
+\begin{enumerate}
+	\item Start
+	\item Print the OS details using {\color{red}uname} command
+	\item Print the availabel shells from /etc/shells
+	\item Print CPU info using {\color{red}lscpu} command
+	\item Print the memory info using {\color{red}free} command
+	\item Print the hard disk info using {\color{red}df} command
+	\item Print the filesystems using {\color{red}lsblk} command
+	\item Stop
+\end{enumerate}
 \textbf{Script:}\newline
-\inputminted{bash}{../Scripts/Expt5.sh}
+\inputminted{bash}{../Scripts/Set1/Expt5.sh}
 \textbf{Output:}\newline
 \includegraphics[width=\linewidth]{../Images/Shell1/2.png}
+\pagebreak
 \item Write a shell script to implement a menu driven calculator with following functions
 \begin{enumerate}
 \item Addition
@@ -53,8 +70,16 @@
 \item Division
 \item Modulus
 \end{enumerate}
+\textbf{Algorithm:}
+\begin{enumerate}
+	\item Start
+	\item Read the operations
+	\item Check if the operation is valid
+	\item If valid, perform the operation, else print error message
+	\item Stop
+\end{enumerate}
 \textbf{Script:}\newline
-\inputminted{bash}{../Scripts/Expt6.sh}
+\inputminted{bash}{../Scripts/Set1/Expt6.sh}
 \textbf{Output:}\newline
 \includegraphics[width=\linewidth]{../Images/Shell1/3.png}
 \pagebreak
@@ -64,14 +89,32 @@
 \item Check whether the ulist file exists and print an error message if it does not
 \item Check whether the username already exists in the file. If the username exists, print a message stating that the name already exists. Otherwise, add the username to the end of the list.
 \end{enumerate}
+\textbf{Algorithm:}
+\begin{enumerate}
+	\item Start
+	\item Check if the number of arguments is equal to two
+	\item Check if the file exists
+	\item Iterate through the file and check if the given name exists in the file
+	\item If it doesn't exist in the file, add the name to the file
+	\item Stop:
+\end{enumerate}
 \textbf{Script:}\newline
-\inputminted{bash}{../Scripts/Expt7.sh}
+\inputminted{bash}{../Scripts/Set1/Expt7.sh}
 \textbf{Output:}\newline
 \includegraphics[width=\linewidth]{../Images/Shell1/4.png}
 \pagebreak
 \item Write a Shell script which starts on system boot up and kills every process which uses more than a specified amount of memory or CPU.\newline
+\textbf{Algorithm:}
+\begin{enumerate}
+	\item Start
+	\item Read inputs from a {\color{red}ps} command.
+	\item Iterate through the inputs
+	\item Check if the process belong to the root user. If it does, skip it.
+	\item Check if the process uses more than the specified amount of CPU or memory. If it does, kill it using {\color{red}kill} command
+	\item Stop
+\end{enumerate}
 \textbf{Script:}\newline
-\inputminted{bash}{../Scripts/Expt8.sh}
+\inputminted{bash}{../Scripts/Set1/Expt8.sh}
 \textbf{Output:}\newline
 \includegraphics[width=\linewidth]{../Images/Shell1/5.png}
 \end{enumerate}
