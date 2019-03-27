@@ -5,4 +5,4 @@ then
 	printf "File does not exist"
 fi
 
-cat $1 | sort | uniq
+awk '!seen[$0]++' $1

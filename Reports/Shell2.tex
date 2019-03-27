@@ -84,7 +84,7 @@
 \includegraphics[width=\linewidth]{../Images/Shell2/4.png}
 \pagebreak
 
-\item Write a shell script that, given a file name as the argument will count vowels, blank spaces, characters, number of line and symbols. 6. Write a shell script that will take an input file and remove identical lines. \newline
+\item Write a shell script that, given a file name as the argument will count vowels, blank spaces, characters, number of line and symbols. \newline
 \textbf{Algorithm}:\newline
 \begin{enumerate}
 	\item Start.
@@ -102,7 +102,19 @@
 \textbf{Output:}\newline
 \includegraphics[width=\linewidth]{../Images/Shell2/5.png}
 \pagebreak
-
+\item Write a shell script that will take an input file and remove identical lines. \newline
+\textbf{Algorithm}:\newline
+\begin{enumerate}
+	\item Start.
+	\item Exit the script if the file does not exist.
+	\item Use {\color{red}awk `!seen[\$0]++' }.
+	\item This makes a dictionary, named seen. When a new line is encountered, it sets the value of the key as one. It prints the lie only if the value of seen[\$0] is zero. So the next time the same line is encountered, it is not printed.
+	\item Stop.
+\end{enumerate}
+\newline
+\textbf{Script:}\newline
+\inputminted{bash}{../Scripts/Set2/6.sh}
+\pagebreak
 \item Write a shell script that displays a list of all the files in the current directory to which the user has read, write and execute permissions. \newline
 \textbf{Algorithm}:\newline
 \begin{enumerate}
