@@ -1,0 +1,9 @@
+#!/bin/perl
+
+my $count = 0;
+while(my $line = <>){
+	for (split ' ', $line) {
+		$count++ if $_ =~ /e$/i;
+	}
+}
+printf("Count: %d\n", $count);
