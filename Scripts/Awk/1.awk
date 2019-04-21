@@ -1,8 +1,9 @@
 #!/usr/bin/awk
 BEGIN{
-	FS = '-'
+	printf "Enter the date: "
+	getline date < "/dev/tty"
 }
-{
-	
+END{
+	print date
 }
 

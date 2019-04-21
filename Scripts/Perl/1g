@@ -3,7 +3,7 @@
 my $count = 0;
 while(my $line = <>){
 	for (split ' ', $line) {
-		if ($_ =~ /l.+m/i){
+		if ($_ =~ /l.*m/i){
 			printf("%s\n", $_);
 			$count++;
 		}
