@@ -1,0 +1,6 @@
+[submodule "foss-gui"]
+	path = foss-gui
+	url = https://github.com/rwithik/foss-gui
+[submodule "foss-php"]
+	path = foss-php
+	url = https://github.com/justine05/foss-php
