@@ -1,3 +1,3 @@
 #!/bin/awk
 
-!seen[$0]++ {print $1}
+!seen[$0]++ {print $0}

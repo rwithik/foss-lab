@@ -1,0 +1,8 @@
+#!/usr/bin/awk -f
+
+{
+if ($2 > 49 && $3 > 49 && $4 > 49) 
+		print $1, "pass";
+else
+		print $1, "fail";
+}
